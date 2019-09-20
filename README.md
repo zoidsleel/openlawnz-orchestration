@@ -4,7 +4,7 @@ the openlawnz database dump into postgres.
 
 The URL to download to the database dump will be made available to volunteers
 
-##Running
+## Running
 
 1. Download the docker.sh file.
 
