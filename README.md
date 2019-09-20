@@ -2,7 +2,7 @@
 This docker.sh contains the scripts required to create a docker container to restore 
 the openlawnz database dump into postgres.
 
-The URL to download to the database dump will be made available to volunteers
+Please note that the URL to download the database dump will be made available to volunteers
 
 ## Running
 
@@ -10,4 +10,4 @@ The URL to download to the database dump will be made available to volunteers
 
 2. Excecute the command chmod to make the docker.sh executable
 
-3. Excute the docker.sh file to run the scripts
+3. Execute the docker.sh file to run the scripts
