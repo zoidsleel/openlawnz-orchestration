@@ -1,14 +1,15 @@
+This is for Windows user
 #!/bin/sh
 
 ## Set the variables  
-DB_MOUNT_VOLUME=data
+data
 
 echo "Creating mount volume directory"
-mkdir -p $DB_MOUNT_VOLUME
+mkdir data
 
 echo "Running docker image"
 docker pull postgres:latest
-docker run --name openlawnz-postgres -p5432:5432 -v $DB_MOUNT_VOLUME:/var/lib/postgresql/data -d postgres:latest
+docker run --name openlawnz-postgres -p5432:5432 -v data:/var/lib/postgresql/data -d postgres:latest
 
 echo "Downloading latest OpenLaw NZ database"
 curl -o openlawnzdb.sql https:<URL provided by volunteering with OpenLaw NZ>
